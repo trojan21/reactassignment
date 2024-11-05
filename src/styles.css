@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    display: flex;
+    padding: 1em;
+    background-color: #f4f4f4;
+    justify-content: flex-start;
+  }
+  
+  .header-left {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  .kanban-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  
+  .column {
+    flex: 1;
+   
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #374151;
+    margin: 0;
+}
+.card .tag {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #666;
+    margin-top: 5px;
+}
+.card .status, .card .priority, .card .user {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.card .status::before, .card .priority::before, .card .user::before {
+    content: "•";
+    margin-right: 4px;
+    font-weight: bold;
+    color: #374151;
+}
+  .card-detail {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5em;
+  }
+  .column h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+  
